@@ -6,4 +6,4 @@ CHAN = "#username"
 NICK = "botnick"
 PASS = "oauth:token"
 
-MODS = ['username','anotheruser']
+MODS = ['username', 'anotheruser']

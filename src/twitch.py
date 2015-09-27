@@ -8,6 +8,7 @@ CHAN = config.CHAN
 NICK = config.NICK
 PASS = config.PASS
 
+
 """
 IRC Helper Functions
 """
@@ -49,6 +50,7 @@ def get_message(msg):
   result = result.lstrip(':')
   return result
 
+
 """
 Moderator Commands
 """
@@ -65,6 +67,7 @@ mod_commands = {
   '!kuma':    mod_kuma
 }
 
+
 """
 User Commands
 """
@@ -80,6 +83,7 @@ commands = {
   '!run':     command_run,
   '!naka':    command_naka
 }
+
 
 """
 Message parsers
@@ -130,6 +134,7 @@ def parse_message(msg):
           commands[do](things)
       except:
         pass
+
 
 """
 IRC Server Connection
